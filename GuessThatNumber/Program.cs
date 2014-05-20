@@ -38,6 +38,7 @@ namespace GuessThatNumber
                 //start secondary 'while' loop
                 while (guess != number)
                 {
+                    //If statements for above and below number
                     if (guess < number)
                     {
                         Console.WriteLine("You were under, but keep trying!");
@@ -53,6 +54,7 @@ namespace GuessThatNumber
                         track += 1;
                     }
                 }
+                //Success statement and rerun prompt
                 Console.WriteLine("Congratulations! You got the number! Your reward is satifaction!");
                 Console.WriteLine("You required " + track + " guesses. Try to do it in less next time!");
                 Console.WriteLine("Would you like to play again?");
